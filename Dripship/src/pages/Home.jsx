@@ -6,6 +6,9 @@ export default function Home() {
         className="relative bg-cover bg-center h-[80vh]"
         style={{ backgroundImage: "url('/Dripship_logo.png')" }} // <-- replace with your hero image
       >
+        {/* Gradient overlay for better text/navbar readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent"></div>
+
         <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-6">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
             Elevate Your Style
