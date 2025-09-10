@@ -6,7 +6,7 @@ export const items = [
     price: "₹899",
     img: "/Essential_front.jpeg",
     desc: "240gsm French Terry - built to last, built to flex.",
-    images: ["/Essential_front.jpeg", "/Essential_back.jpeg", "/Essential_extra.jpeg"]
+    images: ["/Essential_front.jpeg", "/Essential_back.jpeg"]
   },
   { 
     id: 2, 
@@ -15,6 +15,6 @@ export const items = [
     price: "₹1199",
     img: "/Dripstar_front.jpeg",
     desc: "Durable, stylish, and perfect for layering across seasons.",
-    images: ["/Dripstar_front.jpeg", "/Dripstar_back.jpeg", "/Dripstar_extra.jpeg"]
+    images: ["/Dripstar_front.jpeg", "/Dripstar_back.jpeg", "/Dripstar_extra.jpeg","/Dripstar_extra2.jpeg"]
   }
 ];

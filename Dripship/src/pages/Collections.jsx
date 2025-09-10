@@ -73,7 +73,7 @@ export default function Collections() {
             />
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
               <h3 className="text-lg font-semibold text-white">{item.name}</h3>
-              <p className="text-sm text-gray-200">{item.collection}</p>
+              <p className="text-sm text-gray-200">{item.collection} • {item.price}</p>
             </div>
           </motion.div>
         ))}

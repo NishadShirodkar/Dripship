@@ -1,8 +1,10 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import { Instagram } from "lucide-react";
 import { items } from "../data/products"; // your products array
 import { useNavigate } from "react-router-dom";
+import { useRef, useEffect } from "react";
+import HorizontalScrollSection from "../components/HorizontalScroll";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -90,24 +92,8 @@ export default function Home() {
 
 
 
-      {/* Brand Story / Why Us */}
-      <div className="py-16 px-6 max-w-6xl mx-auto md:flex md:items-center md:gap-12 text-center md:text-left">
-        <div className="md:w-1/2">
-          <img
-            src="/brand_story_img.jpeg"
-            alt="Brand Story"
-            className="rounded-xl shadow-lg"
-          />
-        </div>
-        <div className="md:w-1/2 mt-8 md:mt-0">
-          <h2 className="text-3xl font-bold text-deep-navy mb-6">Why Shop With Us?</h2>
-          <ul className="text-charcoal-grey space-y-3 text-lg">
-            <li>✅ Curated collections with premium fabrics</li>
-            <li>✅ Timeless designs for everyday wear</li>
-            <li>✅ Sustainable & quality-focused production</li>
-          </ul>
-        </div>
-      </div>
+      {/* Brand Story / Why Us - Horizontal Scroll with Scale Effect */}
+          <HorizontalScrollSection />
 
       {/* Newsletter Signup */}
 <div className="bg-charcoal-grey text-ivory-white py-16 text-center px-6">
@@ -137,13 +123,13 @@ export default function Home() {
           {/* Contact Info */}
           <div className="flex flex-col items-start md:items-end">
             <h4 className="font-semibold mb-2">Contact Us</h4>
-            <p>Email: <a href="mailto:info@dripship.com" className="hover:text-champagne-gold">info@dripship.com</a></p>
-            <p>Phone: <a href="tel:+911234567890" className="hover:text-champagne-gold">+91 12345 67890</a></p>
+            <p>Email: <a href="mailto:dripship.clo@gmail.com" className="hover:text-champagne-gold">dripship.clo@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919022396731" className="hover:text-champagne-gold">+91 90223 96731</a></p>
 
             {/* Social Links */}
             <div className="flex gap-4 mt-2 justify-start md:justify-end">
               <a
-                href="https://www.instagram.com/yourpage"
+                href="https://www.instagram.com/dripship.co"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-champagne-gold flex items-center gap-1"
